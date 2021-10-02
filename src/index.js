@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CentovaCast from './centovacast';
+import './index.css';
+import Home from './views/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CentovaCast />
+    <Home titleHome="Centova Cast - Verify Status Account" />
   </React.StrictMode>,
   document.getElementById('root')
 );
