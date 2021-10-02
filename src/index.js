@@ -5,7 +5,7 @@ import Home from './views/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home titleHome="Centova Cast - Verify Status Account" />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );

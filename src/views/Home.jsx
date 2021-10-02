@@ -1,15 +1,12 @@
 import React from "react";
-import { Grid, Card, Text, Input, Spacer, Button, Loading } from "@geist-ui/react";
-import { Settings } from '@geist-ui/react-icons'
+import { Grid, Card, Input,Spacer, Button, Loading } from "@geist-ui/react";
+import { Database } from "@geist-ui/react-icons";
+import Header from "../components/Header";
 
 const Home = (props) => (
   <React.Fragment>
     <Grid.Container gap={2} justify="center">
-      <Grid xs={24} justify="center">
-        <Card borde width="90%">
-          <Text h1>{props.titleHome}</Text>
-        </Card>
-      </Grid>
+      <Header titleHome="Centova Cast - Verify Status Account" />
       <Grid xs={22} md={10}>
         <Card shadow width="100%" height="350px">
           <Input placeholder="IP our Domains Server" scale={4 / 3} width="95%">
@@ -24,11 +21,13 @@ const Home = (props) => (
             Username your Centova Cast
           </Input>
           <Spacer h={3} />
-          <Button icon={<Settings />} type="success">Verify Account</Button>
+          <Button icon={<Database />} type="success">
+            Verify Account
+          </Button>
         </Card>
       </Grid>
       <Grid xs={22} md={10}>
-        <Card shadow width="100%" >
+        <Card shadow width="100%">
           <Loading>Aguardando informações</Loading>
         </Card>
       </Grid>
