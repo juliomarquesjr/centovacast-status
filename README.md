@@ -2,6 +2,7 @@
 # Sobre o Projeto
 
 Destinado para consulta de informações em Streaming de Rádios que utilizam o painel Centova Cast.
+**Demo do projeto**: https://centovacast-status.vercel.app/
 
 ## Tecnologias utilizadas
  - React.JS
