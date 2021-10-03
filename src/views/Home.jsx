@@ -12,7 +12,7 @@ const Home = () => {
   };
 
   const [dataForm, setDataForm] = useState(server);
-  const [dataJson, setDataJson] = useState("Sem dados");
+  const [dataJson, setDataJson] = useState("");
 
    async function verifyDataJson() {
      await getDataRadio(
