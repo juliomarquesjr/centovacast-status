@@ -9,8 +9,8 @@ const Form = props =>(
           <Input placeholder="IP our Domains Server" 
           scale={4 / 3} 
           width="95%"
-          value={props.values.server}
-          onChange={event => props.setDataForm({...props.values, server: event.target.value})}
+          value={props.values.host}
+          onChange={event => props.setDataForm({...props.values, host: event.target.value})}
           >
             Domain ou IP Server Centova Cast
           </Input>
@@ -25,7 +25,9 @@ const Form = props =>(
             Username your Centova Cast
           </Input>
           <Spacer h={3} />
-          <Button icon={<Database />} type="success">
+          <Button icon={<Database />} 
+          type="success"
+          onClick={() => props.verifyDataJson()}>
             Verify Account
           </Button>
         </Card>
