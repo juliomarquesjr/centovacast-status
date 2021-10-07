@@ -18,7 +18,9 @@ const Home = () => {
   //State referente ao loading
   const [loading, setLoading] = useState(false);
 
+  //Função executada quando o botão Verify Account é precionado
   async function verifyDataJson() {
+    
     setLoading(true) //Mostra o loading
     await getDataRadio(
       `https://${dataForm.host}:2199/rpc/${dataForm.user}/streaminfo.get`

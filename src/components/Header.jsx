@@ -4,7 +4,7 @@ import { Grid, Card, Text } from "@geist-ui/react";
 const Header = (props) => (
   <React.Fragment>
     <Grid xs={24} justify="center">
-      <Card width="90%">
+      <Card width="95%">
         <Text h1>{props.titleHome}</Text>
       </Card>
     </Grid>
