@@ -8,11 +8,11 @@ const InfoDataRadio = (props) => {
     {
       titulo: props.data.title,
       bitrate: props.data.bitrate,
-      ouvintes: props.data.listeners ? props.data.listeners : "N/A" ,
+      ouvintes: props.data.listeners ? props.data.listeners : "n/d" ,
+      pico: props.data.listeners ? props.data.listeners : "n/d" ,
       formato: props.data.tuneinformat,
       statusServer: props.data.serverstate ? <Wifi /> : <WifiOff /> 
     },
-
   ];
 
   return (
