@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Spacer, Description, Image, Collapse, Text } from "@geist-ui/react";
+import { Table, Spacer, Description, Image } from "@geist-ui/react";
 import { Wifi, WifiOff } from "@geist-ui/react-icons";
 
 const InfoDataRadio = (props) => {
